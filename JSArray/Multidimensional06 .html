@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript Array
+    </title>
+</head>
+
+<body>
+
+    <h2>JavaScript Array 06 </h2>
+    <p>The split method converts a string into an array, while the join method does the opposite</p>
+    
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="d4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="d8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <script>
+       const element1 = ['hydrogen', 'H', 1.008]; 
+       const element2 = ['helium', 'He', 4.003];
+       const element26 = ['iron', 'Fe', 55.85];
+
+       const table = new Array();
+       table.push(element1);
+       table.push(element2);
+       table.push(element26);
+
+        document.getElementById("demo1").innerHTML ="table : [" +table+"]";
+        document.getElementById("demo2").innerHTML ="table[1] : [" +table[1]+"]";
+        document.getElementById("demo3").innerHTML ="table[1][1] : [" +table[1][1]+"]";
+        document.getElementById("demo4").innerHTML ="mass of element 1 : [" +table[0][2]+"]";
+        document.getElementById("demo5").innerHTML ="name of element 2  : [" +table[1][0]+"]";
+        document.getElementById("demo6").innerHTML ="symbol of element 3 : [" +table[2][1]+"]";
+    </script>
+
+</body>
+
+</html>

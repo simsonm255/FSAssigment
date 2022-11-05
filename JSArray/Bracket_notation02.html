@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript Array
+    </title>
+</head>
+
+<body>
+
+    <h2>JavaScript Array 02</h2>
+
+    <p>02) push, pop, shift and unshift are used to add/remove elements from the beginning/end of an array. Bracket notation
+        can be used to modify any element within an array. Starting with the cargoHold array ['oxygen tanks', 'space
+        suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'], write statements to do the
+        following:</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        const cargoHold =['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'];
+        
+        document.getElementById("demo1").innerHTML = cargoHold;
+        cargoHold.pop();
+        document.getElementById("demo2").innerHTML = cargoHold;
+        cargoHold.shift();
+        document.getElementById("demo3").innerHTML = cargoHold;
+        cargoHold.unshift(1138);
+        cargoHold.push('20 meters');
+        document.getElementById("demo4").innerHTML = cargoHold;
+        var literal = cargoHold;
+        document.getElementById("demo5").innerHTML = '['+cargoHold+'] length of Array is: '+literal.length;   
+        
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript Array
+    </title>
+</head>
+
+<body>
+
+    <h2>JavaScript Array 07 </h2>
+    <p>The split method converts a string into an array, while the join method does the opposite</p>
+
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="d4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="d8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <script>
+        let people = ["Greg", "Mary", "Devon", "James"];
+        people.forEach(loopArr)
+
+        people.splice(people.indexOf("Greg"), 1);
+        people.splice(people.indexOf("James"), 1);
+        people.unshift("Matt");
+        people.push("simson");
+        people.filter(specificArr);
+        let copyOfPeople = people.forEach(newPeople);
+        var indexOfMary =  people.indexOf("Mary");
+        var indexOfFoo = people.indexOf("Foo");
+        people.splice(people.indexOf("Devon"),1,"Elizabeth","Artie");
+
+        let withBob = people.push("Bob");
+        
+
+        function loopArr(value) {
+            console.log(value)
+        }
+        function specificArr(value) {
+            if (value == "Mary") {
+
+            }
+            console.log(value);
+        }
+        function newPeople(value) {
+            if (value != "Mary" || value != "Matt") {
+            } else {
+                return value;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

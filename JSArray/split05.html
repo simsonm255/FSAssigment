@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript Array
+    </title>
+</head>
+
+<body>
+
+    <h2>JavaScript Array 05 </h2>
+    <p>The split method converts a string into an array, while the join method does the opposite</p>
+    
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="d4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="d8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <script>
+        var str = "In space, no one can hear you code.";
+
+        document.getElementById("demo1").innerHTML ="str.split() : [" +str.split()+"]";
+        document.getElementById("demo2").innerHTML ="str.split('e'): [" +str.split('e')+"]";
+        
+        document.getElementById("demo3").innerHTML = "str.split(' '): ["+ str.split(' ')+"]";
+        document.getElementById("demo4").innerHTML ="str.split(''): [" +str.split('')+"]";
+        document.getElementById("d4").innerHTML ="original array : [" +str+"]";
+        
+
+
+        var arr = ['B', 'n', 'n', 5];
+        document.getElementById("demo5").innerHTML ="arr.join() : [" +arr.join()+"]";
+        document.getElementById("demo6").innerHTML ="arr.join('a'): [" +arr.join('a')+"]";
+        
+        document.getElementById("demo7").innerHTML = "arr.join(' '): ["+ arr.join(' ')+"]";
+        document.getElementById("demo8").innerHTML ="arr.join('') : [" +arr.join('')+"]";
+        document.getElementById("d8").innerHTML ="original array : [" +arr+"]";
+
+        const material = ["water","space suits","food","plasma sword","batteries"];
+        material.sort();
+        document.getElementById("demo9").innerHTML =": [" +material.join(' ')+"]";
+        
+        
+
+
+    </script>
+
+</body>
+
+</html>

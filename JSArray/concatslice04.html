@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript Array
+    </title>
+</head>
+
+<body>
+
+    <h2>JavaScript Array 04</h2>
+
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <script>
+        const holdCabinet1 = ['duct tape', 'gum', 3.14, false, 6.022e23];
+        const holdCabinet2 = ['orange drink', 'nerf toys', 'camera', 42, 'parsnip'];
+
+        document.getElementById("demo1").innerHTML ="holdCabinet1: [" +holdCabinet1+"]";
+        document.getElementById("demo2").innerHTML ="holdCabinet2: [" +holdCabinet2+"]";
+        
+        const concatArr =  holdCabinet1.concat(holdCabinet2);
+        document.getElementById("demo3").innerHTML = "concatArr: ["+ concatArr+"]";
+        document.getElementById("demo4").innerHTML ="holdCabinet1: [" +holdCabinet1+"]";
+
+        document.getElementById("demo5").innerHTML ="slice of holdCabinet1: [" +holdCabinet1.slice(2)+"]";
+        document.getElementById("demo6").innerHTML ="slice of holdCabinet2: [" +holdCabinet2.slice(4)+"]";
+
+        
+        document.getElementById("demo7").innerHTML ="original Array holdCabinet1: [" +holdCabinet1+"]";
+        document.getElementById("demo8").innerHTML ="original Array holdCabinet2: [" +holdCabinet2+"]";
+
+        document.getElementById("demo9").innerHTML ="reverse of holdCabinet1: [" +holdCabinet1.reverse()+"]";
+        document.getElementById("demo10").innerHTML ="sort of holdCabinet2: [" +holdCabinet2.sort()+"]";
+
+    </script>
+
+</body>
+
+</html>

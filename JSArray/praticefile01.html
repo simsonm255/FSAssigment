@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript Array
+    </title>
+</head>
+
+<body>
+
+    <h2>JavaScript Array 01</h2>
+
+    <p>01) Create an array called practiceFile with the following entry: 273.15. Use the push method to add the
+        following elements to the array. Add items a & b one at a time, then use a single push to add the items in part
+        c. Print the array after each step to confirm the changes.</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const practiceFile = ["273.15"]
+        practiceFile.push(42);
+        document.getElementById("demo1").innerHTML = practiceFile;
+        practiceFile.push("hello");
+        document.getElementById("demo2").innerHTML = practiceFile;
+        practiceFile.push(false, -4.6, "87");
+        document.getElementById("demo3").innerHTML = practiceFile;        
+    </script>
+
+</body>
+
+</html>
