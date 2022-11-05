@@ -16,7 +16,7 @@
         can be used to modify any element within an array. Starting with the cargoHold array ['oxygen tanks', 'space
         suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'], write statements to do the
         following:</p>
-    <p> 
+    <p>
         The splice method can be used to either add or remove items from an array. It can also accomplish both tasks at
         the same time. Use splice to make the following changes to the final cargoHold array from exercise 2. Be sure to
         print the array after each step to confirm your updates.
@@ -31,14 +31,14 @@
         const cargoHold = ['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'];
 
         document.getElementById("demo1").innerHTML = cargoHold;
-        cargoHold.splice(3,0,'keys');
+        cargoHold.splice(3, 0, 'keys');
         document.getElementById("demo2").innerHTML = cargoHold;
-        cargoHold.splice(cargoHold.indexOf('instruction manual'),1);
-        
+        cargoHold.splice(cargoHold.indexOf('instruction manual'), 1);
+
         document.getElementById("demo3").innerHTML = cargoHold;
-        cargoHold.splice(2,0,"cat","fob","string cheese");
+        cargoHold.splice(2, 0, "cat", "fob", "string cheese");
         document.getElementById("demo4").innerHTML = cargoHold;
-        
+
     </script>
 
 </body>
